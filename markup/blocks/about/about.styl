@@ -1,0 +1,108 @@
+.about
+	&__in
+		@extends .in
+		padding-top 12px
+		padding-bottom 30px
+		cf()
+		+below($mobile)
+			padding-bottom 12px
+	&__left
+		padding-top 96px
+		padding-right 42px
+		float left
+		width r-percent(500, 1366)
+
+		+below($desktop)
+			width r-percent(580, 1366)
+
+		+below(1100px)
+			width r-percent(650, 1366)
+
+		+below($tablet)
+			padding-top 10px
+			padding-right 0
+			padding-bottom 10px
+			width 100%
+			float none
+
+	&__title
+		margin-bottom 26px
+		letter-spacing tracking(50)
+
+	&__text
+		margin-bottom 37px
+		@extends .wysiwyg
+		+below($mobile)
+			margin-bottom 16px
+	&__features
+		margin-left 75px
+		font-size 0
+		+below($desktop)
+			margin-left 0
+	&__features-item
+		position relative
+		margin-right 15px
+		padding-top 68px
+		width 100px
+		width r-percent(150,500)
+		display inline-block
+		vertical-align top
+		+below($tablet)
+			width 28%
+		+below($mobile)
+			margin-right 0
+			padding-top 62px
+			width 33.3%
+		&:last-child
+			margin-right 0
+		&:after
+			position absolute
+			top 0
+			left 0
+			content ""
+	&__features-item_first
+		&:after
+			bg($payment-icon)
+	&__features-item_second
+		&:after
+			bg($lifetime-icon)
+	&__features-item_third
+		&:after
+			bg($guarantee-icon)
+	&__features-text
+		padding-right 10px
+		font-size 14px
+		line-height 1
+	&__features-item_third
+		.about__features-text
+			padding-right 36px
+
+	&__right
+		margin-right -277px
+		float right
+		width 1061px
+		width r-percent(1061, 1366)
+		+below($tablet)
+			display none
+	&__image
+		// width 1061px
+		height 632px
+
+.about
+	.about__left
+		+below($tablet)
+			width 100%
+		+below($mobile)
+			padding-top 166px
+			float none
+			width 100%
+
+.font
+	.about__title
+		@extends .title
+
+		+below($tablet)
+			font-size 33px
+		+mobile($mobile)
+			margin-bottom 9px
+			font-size 24px

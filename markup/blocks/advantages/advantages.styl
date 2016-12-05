@@ -1,0 +1,121 @@
+.advantages
+	&__in
+		@extends .in
+		padding-top 55px
+		padding-bottom 50px
+		+below($tablet)
+			padding-top 10px
+			padding-bottom 30px
+		+below($mobile)
+			padding-bottom 0
+	&__title
+		margin-bottom 53px
+		text-align center
+		letter-spacing tracking(100)
+		+below($tablet)
+			text-align left
+	&__list
+		padding-left 117px
+		font-size 0
+		+below($desktop)
+			margin-bottom 10px
+			padding-left 0
+	&__item
+		position relative
+		margin-right 260px
+		min-height 540px
+		display inline-block
+		vertical-align top
+		width 438px
+		&:nth-child(2n)
+			margin-right 0
+		+below($desktop)
+			margin-right r-percent(20, 1366)
+			width 49%
+
+		+below($tablet)
+			margin-right r-percent(40, 1366)
+			margin-bottom 24px
+			width 48%
+			min-height auto
+
+
+	&__image
+		margin-bottom 32px
+		width 434px
+		height 300px
+		+below($desktop)
+			width 100%
+			height auto
+		+below($mobile)
+			margin-bottom 10px
+	&__item-title
+		margin-bottom 10px
+		margin-left 0px
+		color #856262
+	&__item-text
+		font-size 18px
+		+below($tablet)
+			font-size 14px
+		+below($mobile)
+			font-size 12px
+			line-height 14px
+	&__item-number
+		position absolute
+		border 1px solid #DFD4D4
+		width 68px
+		height 68px
+		text-align center
+		color #b48b8b
+		border-radius 50%
+		+below($desktop)
+			display none
+	&__item
+		&:nth-child(odd)
+			.advantages__item-number
+				top 60px
+				right -102px
+				+below($desktop)
+					right r-percent(-102, 438)
+		&:nth-child(even)
+			.advantages__item-number
+				top 146px
+				left -105px
+				+below($desktop)
+					left r-percent(-105, 438)
+		&:nth-child(4)
+			.advantages__item-text
+				margin-right -64px
+				+below($mobile)
+					margin-right 0
+
+	&__nav
+		+below($mobile)
+			display none
+
+.font
+	.advantages__title
+		@extends .title
+
+		+below($tablet)
+			font-size 33px
+
+	.advantages__item-title
+		font 700 30px/1 $metapro-bld
+
+		+below($tablet)
+			font-size 25px
+		+below($mobile)
+			margin-bottom 10px
+			font-size 16px
+
+	.advantages__item-number
+		font 400 30px/1 $intro
+		line-height 66px
+
+.advantages
+	.advantages__title
+		+below($mobile)
+			margin-bottom 14px
+			font-size 24px
+			line-height 26px

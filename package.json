@@ -1,0 +1,22 @@
+{
+  "name": "awesome_project",
+  "version": "1.0.0",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "directories": {},
+  "dependencies": {},
+  "devDependencies": {
+    "css-mqpacker": "^5.0.1",
+    "font-face-observer": "^1.0.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.1",
+    "owl-carousel-2-beta": "^2.1.2",
+    "postcss-csso": "^1.1.2",
+    "postcss-em-media-query": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

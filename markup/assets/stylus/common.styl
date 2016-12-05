@@ -1,0 +1,37 @@
+// Common styles of the project
+
+
+
+html, body
+	height 100%
+
+
+.page
+	// Стили для body
+	font 400 18px/24px sans-serif
+	color $textColor
+	// overflow hidden
+
+.font
+	.page
+		font-family $metapro-normal
+
+.page__wrapper
+	min-height 100%
+	margin-bottom -56px
+	overflow hidden
+	+below($mobile)
+		position relative
+
+
+
+* html .page__wrapper
+	height 100%
+
+.page__buffer
+	height 56px
+
+
+
+
+

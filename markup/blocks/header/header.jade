@@ -1,0 +1,22 @@
+mixin header(data)
+	header.header(id='top')
+		.header__in
+			.header__top
+				a.header__logo.logo(href="/") Бюро ремонта Владимира Скачкова
+
+				.header__phone.phone
+					a.phone__val(href="tel:89506466778") 8 950 646<span class="phone__sep">-</span>67<span class="phone__sep">-</span>78
+					.phone__city г. Кострома
+
+				a.header__button.button(href="#popup") Связаться с нами
+
+			nav.header__menu.menu
+				ul.menu__list
+					li.menu__item
+						a.menu__link(href="#advantages") Наши преимущества
+					li.menu__item
+						a.menu__link(href="#works") Примеры работ
+					li.menu__item
+						a.menu__link(href="#video") Видео
+					li.menu__item
+						a.menu__link(href="#contacts") Обратная связь

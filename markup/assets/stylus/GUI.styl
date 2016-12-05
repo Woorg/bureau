@@ -1,0 +1,141 @@
+// GUI stylies of the project
+
+
+.in
+	margin auto
+	padding-left 10px
+	padding-right 10px
+	max-width 1366px
+	min-width 320px
+
+.button
+	padding 9px 68px 14px
+	display inline-block
+	vertical-align top
+	background $buttonColor
+	font 300 24px/1 $metapro-book
+	color #fff
+	text-align center
+	text-decoration none
+	border-radius 2px
+	transition background .3s ease
+	&:hover
+		background darken($buttonColor, 10)
+	+below(440px)
+		width 100%
+		padding-left 30px
+		padding-right 30px
+	+below($mobile)
+		padding-top 8px
+		padding-bottom 12px
+		font-size 18px
+.title
+	font 400 40px/1 $intro
+
+.nav
+	position relative
+	right -8px
+	margin-top -2px
+	text-align center
+	+below(468px)
+		right 0
+		text-align left
+	&__link
+		position relative
+		margin-right 46px
+		padding-right 15px
+		display inline-block
+		vertical-align top
+		font-size 14px
+		color #937540
+		letter-spacing tracking(100)
+		text-decoration none
+		transition color .3s ease
+		+below(468px)
+			margin-bottom 10px
+		&:first-child
+			&:after
+				position absolute
+				top 2px
+				right 0
+				content ""
+				bg($arrow-up)
+		&:last-child
+			&:after
+				position absolute
+				top 2px
+				right 2px
+				content ""
+				bg($arrow-down)
+		&:hover
+			color darken(#937540, 10)
+		&:last-child
+			margin-right 0
+.nav_second
+	.nav__link
+		&:first-child
+			&:after
+				bg($arrow-top)
+		&:last-child
+			&:after
+				bg($arrow-up)
+
+.font
+	.nav
+		font 400 14px/1 $intro
+
+
+img
+	display block
+	max-width 100%
+	height auto
+
+
+.popup
+	position relative
+	margin auto
+	width 980px
+	padding 60px 40px 40px
+	background #f7f6f3
+	+below($tablet)
+		width 100%
+	.form
+		margin-bottom 0
+	&__close
+		position absolute
+		top 20px
+		right 20px
+		padding-right 30px
+		display block
+		color #7d7d7d
+		text-decoration none
+		&:hover
+			color darken(#7d7d7d, 10)
+		&:after
+			position absolute
+			top 0
+			right 0
+			content ''
+			bg($close)
+
+.font
+	.popup__close
+		font 300 18px/1 $metapro-book
+		+below($mobile)
+			font-size 12px
+			line-height 20px
+
+.mfp-close-btn-in
+	.mfp-close
+		display none
+
+.wysiwyg
+	p
+		margin-bottom 23px
+		letter-spacing tracking(5)
+		+below($tablet)
+			font-size 14px
+		+below($mobile)
+			margin-bottom 15px
+			font-size 12px
+			line-height 16px

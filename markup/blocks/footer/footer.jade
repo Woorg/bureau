@@ -1,0 +1,23 @@
+mixin footer(data)
+	footer.footer
+		.footer__in
+			p.footer__copyright © 2016 Строительно-ремонтная компания «ГлавСтрой-2008», г. Кострома, ул. Голубкова, 12А.
+			p.footer__created <a href='#'>Создание сайта:</a> Агентство интернет-маркетинга «Живая сеть»
+
+	.popup.mfp-hide#popup
+		a.popup__close(href='#close') Закрыть
+		form.form(action="#", method="post")
+			h2.form__title Свяжитесь с нами
+			.form__row
+				.form__input-w.form__input-w_wide
+					label(for="input-1") Пожалуйста представьтесь:
+					input.form__input#input-1(type="text", name="#", value="")
+				.form__input-w
+					label(for="input-2") Эл. почта:
+					input.form__input#input-2(type="text", name="#", value="")
+			.form__row
+				.form__textarea-w
+					label(for="textarea") Ваше сообщение:
+					textarea.form__textarea
+			.form__button
+				input.form__submit(type="submit", value="Отправить")

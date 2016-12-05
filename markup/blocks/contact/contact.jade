@@ -1,0 +1,28 @@
+mixin contact(data)
+	section.contact(id="contacts")
+		.contact__top
+			h2.contact__title Свяжитесь с нами
+			p.contact__text Мы предложим Вам лучшее решение.
+		.contact__body
+			.contact__in
+				form.form(action="#", method="post")
+					.form__row
+						.form__input-w.form__input-w_wide
+							label(for="input-1") Пожалуйста представьтесь:
+							input.form__input#input-1(type="text", name="#", value="")
+						.form__input-w
+							label(for="input-2") Эл. почта:
+							input.form__input#input-2(type="text", name="#", value="")
+						.form__input-w
+							label(for="input-3") Телефон:
+							input.form__input#input-3(type="text", name="#", value="")
+					.form__row
+						.form__textarea-w
+							label(for="textarea") Ваше сообщение:
+							textarea.form__textarea
+					.form__button
+						input.form__submit(type="submit", value="Отправить")
+
+				.contact__nav.nav.nav_second
+					a.nav__link(href="#top") Бр Владимира Скачкова
+					a.nav__link(href="#video") Мы умеем работать

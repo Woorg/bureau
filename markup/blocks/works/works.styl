@@ -1,0 +1,220 @@
+.works
+	&__in
+		@extends .in
+		padding-top 5px
+		padding-bottom 56px
+		+below($mobile)
+			padding-bottom 0
+	&__title
+		margin-bottom 32px
+		text-align center
+		letter-spacing tracking(100)
+		+below($desktop)
+			text-align center
+		+below($tablet)
+			text-align left
+		+below($mobile)
+			margin-bottom 16px
+	&__text
+		margin-bottom 33px
+		padding-left 118px
+		padding-right 40px
+		letter-spacing tracking(3)
+		+below($desktop)
+			padding-left 0
+			padding-right 0
+		+below($mobile)
+			display none
+	&__nav
+		right 0
+		+below($mobile)
+			display none
+.font
+	.works__title
+		@extends .title
+
+		+below($desktop)
+			font-size 33px
+			text-align center
+		+below($tablet)
+			text-align left
+		+below($mobile)
+			font-size 24px
+			text-align center
+
+.slider
+	position relative
+	margin 0 auto 41px
+	max-width 1130px
+	&__item
+		display inline-block
+		vertical-align top
+	&__link
+		text-decoration none
+	&__image
+		max-width 1130px
+		height 740px
+		+below($desktop)
+			height auto
+	.owl-nav
+		position absolute
+		top 50%
+		width 100%
+		margin-top -30px
+		display block
+	.owl-prev,
+	.owl-next
+		position absolute
+		top 0
+		text-indent -9999px
+		opacity .8
+		transition opacity .3s ease
+		&:hover
+			opacity 1
+	.owl-prev
+		top 0
+		left -80px
+		bg($nav-left)
+	.owl-next
+		top 0
+		right -83px
+		bg($nav-right)
+	.owl-dots
+		position absolute
+		left 0
+		right 0
+		bottom -30px
+		text-align center
+		line-height 1
+	.owl-dot
+		+below($desktop)
+			margin-right 12px
+			display inline-block
+			vertical-align top
+			width 10px
+			height 10px
+			background #d3d3d3
+			line-height 1
+			border-radius 50%
+			&:last-child
+				margin-right 0
+		+below($mobile)
+			width 5px
+			height 5px
+		&.active
+			background #937540
+
+
+.thumbs
+	margin-bottom 56px
+	&__item
+		display inline-block
+		vertical-align top
+.works
+	.thumbs
+		+below($desktop)
+			display none
+// 	&__link
+
+// 	&__image
+	.owl-nav
+		display none
+
+
+
+.video
+	position relative
+	padding-bottom 40px
+	// min-height 960px
+	overflow hidden
+	+below($mobile)
+		position absolute
+		top 160px
+		left 0
+		width 100%
+	&__in
+		position absolute
+		top 0
+		left 0
+		right 0
+		@extends .in
+		padding-top 46px
+		z-index 2
+		+below($desktop)
+			display none
+	&__title
+		margin-bottom 27px
+		text-align center
+		letter-spacing tracking(100)
+	&__text
+		margin-bottom 30px
+		padding-right 50px
+		padding-left 118px
+		letter-spacing tracking(4)
+	&__object-w
+		position relative
+		margin-bottom 55px
+		padding-bottom 50.7%
+		height 0
+		overflow hidden
+		+below($tablet)
+			margin-bottom 20px
+	&__trigger
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		z-index 1
+		display block
+		background url('../images/content/video-object.jpg') no-repeat
+		background-position 48% 50%
+		background-size cover
+		text-indent -9999px
+		&:before
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			content ""
+			background-color rgba(255,255,255, .6)
+		&:after
+			position absolute
+			top 50%
+			left 50%
+			content ""
+			margin-top -254px
+			margin-left -254px
+			width 508px
+			height 508px
+			background url('../images/general/video-button.png')
+			+below($tablet)
+				margin-top -127px
+				margin-left -127px
+				width 254px
+				height 254px
+				background-size cover
+	&__trigger_hidden
+		display none
+	&__object
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-position 0 0
+		background-repeat no-repeat
+		background-size cover
+	&__nav
+		right -12px
+		+below($mobile)
+			display none
+
+.font
+	.video__title
+		@extends .title
+
+		+below($desktop)
+			font-size 33px
+
